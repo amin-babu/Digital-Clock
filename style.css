@@ -8,11 +8,60 @@
 }
 
 body {
-  background-color: #292c3a;
+  background-color: #2e2f44;
   color: #d7d9df;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 .myWatch {
-  margin: 5rem;
-  font-size: 5rem;
+  text-align: center;
+  background-color: #2d2e40;
+  border: 1px solid #b467b9;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border-radius: 7px;
+}
+
+.myWatch > div:first-child {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+#hour {
+  color: #5cb0ff;
+  font-size: 4rem;
+}
+
+#minute {
+  color: #fda46a;
+  font-size: 4rem;
+  margin-right: 10px;
+}
+
+#colone {
+  font-size: 4rem;
+  color: #939492;
+  margin-bottom: 12px;
+}
+
+#second {
+  margin-bottom: 7px;
+  color: #eede7d;
+  font-size: 1.2rem;
+}
+
+#m {
+  color: #4eb19d;
+}
+
+.myWatch > div:last-child {
+  display: flex;
+  justify-content: center;
+  color: #e095e6;
+  font-size: 1.3rem;
+  gap: 8px;
 }

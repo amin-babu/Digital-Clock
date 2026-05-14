@@ -13,18 +13,17 @@ function myTime() {
     hr = myDate.getHours();
   }
 
-  let currentTime = `${hr} : ${min} : ${sec}`;
-
-  document.querySelector('#h').innerHTML = currentTime;
+  document.querySelector('#hour').innerHTML = hr;
+  document.querySelector('#minute').innerHTML = min;
+  document.querySelector('#second').innerHTML = sec;
   document.querySelector('#m').innerHTML = m;
 
   const myDays = ['Sunday', 'Monday', 'Tuesday', 'Webnesday', 'Thursday', 'Friday', 'Saturday'];
   const myMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
-  let day = myDate.getDate();
-  let currentDate = `${myDays[myDate.getDay()]}, ${myMonths[myDate.getMonth()]} ${day}`;
-
-  document.querySelector('#date').innerHTML = currentDate;
+  document.querySelector('#date').innerHTML = myDays[myDate.getDay()];
+  document.querySelector('#day').innerHTML = myDate.getDate();
+  document.querySelector('#month').innerHTML = myMonths[myDate.getMonth()];
 }
 
 myTime();
