@@ -18,14 +18,16 @@ function myTime() {
   document.querySelector('#second').innerHTML = sec;
   document.querySelector('#m').innerHTML = m;
 
-  const myDays = ['Sunday', 'Monday', 'Tuesday', 'Webnesday', 'Thursday', 'Friday', 'Saturday'];
+  const myDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const myMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
   document.querySelector('#date').innerHTML = myDays[myDate.getDay()];
   document.querySelector('#day').innerHTML = myDate.getDate();
   document.querySelector('#month').innerHTML = myMonths[myDate.getMonth()];
+
+  document.querySelector('title').innerHTML = `${hr} : ${min} : ${sec}`;
 }
 
 myTime();
 
-setInterval(() => { myTime() }, 1000);
+setInterval(() => myTime(), 1000);
